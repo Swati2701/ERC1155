@@ -13,8 +13,8 @@ contract TokenCreationERC1155 is ERC1155{
     
     constructor() ERC1155("https://ipfs.io/ipfs/QmXe4KrxY9ebQNToxuTKJ1JRUrtEjSSvzaFrzW1DMm6UNx/{id}.json") {}
     
-    function mintBatchToken(address to, uint256[] memory initalSupply) public{
-        _mintBatch(to, tokenId, initalSupply, ""); 
+    function mintBatchToken(address to, uint256[] memory initalBatchSupply) public{
+        _mintBatch(to, tokenId, initalBatchSupply, ""); 
     }
 
     function mintToken(address to, uint initalSupply) public{
